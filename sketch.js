@@ -23,7 +23,8 @@ function setup() {
   button.mousePressed(shipgen);
   outcome = createP(" ");
   //outcome = text("Who are we mashing together this time?", width*0.4, height/2+150);
-  outcome.position(width*0.4, height/2+150);
+  outcome.position(width*0.3, height*0.35);
+  outcome.addClass("outcomeStyle")
 }
 
 function shipgen() {
@@ -59,12 +60,13 @@ function shipgen() {
     }
   };
   outcome_real = join(outcome_orig, ' x ')
- // outcome = createP(outcome_real);
+  test_outcome = createP(outcome_real);
 }
  
 function draw() {
   background('#F7CAC9');
   let sliderval = slider.value();
   label.html("Ship size = " + sliderval)
+  textAlign(CENTER);
   outcome.html(outcome_real);
 }

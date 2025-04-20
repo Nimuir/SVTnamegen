@@ -4,6 +4,10 @@ html, body {
  font-family:Verdana, sans-serif;
 }
 
+.outcomeStyle {
+  text-align: center;
+  font-size: 170%;
+}
 canvas {
   display: block;
 }
