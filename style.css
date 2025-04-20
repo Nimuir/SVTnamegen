@@ -1,0 +1,72 @@
+html, body {
+  margin: 0;
+  padding: 0;
+ font-family:Verdana, sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+button {
+  border: none;
+  background: #B3CEE5;
+  color: white;
+  padding: 5px;
+}
+
+button:hover {
+  background: #103f67;
+}
+
+input[type=range].sliderStyle {
+  -webkit-appearance: none;
+  background-color: transparent;
+  appearance: none;
+  height: 5px; /* Specified height */
+  background: #B3CEE5;
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+input[type=range].sliderStyle::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #B3CEE5;
+  border: none;
+  outline: none;
+}
+
+input[type=range].sliderStyle::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #e47cd1; /*  background */
+  cursor: pointer; /* Cursor on hover */
+  border: none;
+  outline: none;
+}
+
+
+/*  ffs how is this so hard
+
+input[type=range].sliderStyle {
+  background: transparent;
+  border: none;
+}
+
+.sliderStyle {
+  border: none;
+}
+
+input[type=range].sliderStyle::-webkit-slider-runnable-track {
+  background: #B3CEE5;
+  border: none;
+}
+.sliderStyle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+}
+
+*/
