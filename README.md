@@ -1,1 +1,3 @@
 # SVTnamegen
+
+Simple ship generator..
